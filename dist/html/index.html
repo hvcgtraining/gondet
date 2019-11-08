@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+    <link rel="stylesheet" href="../css/styles.css"/>
+  </head>
+  <body>
+    <div class="bg-body"></div>
+    <header class="wrapper-header">
+      <div class="header-main">
+        <div class="header_container">
+          <div class="header__main-bg-wrapper header__main-bg-custom"><img class="header__main-bg" src="https://cdn.evbstatic.com/s3-build/perm_001/6cc698/django/images/homefeed/music-campaing-3-2600-large.jpg" alt="custom-header-background"/><img class="header__main-bg header__main-bg--blurred" src="https://cdn.evbstatic.com/s3-build/perm_001/6cc698/django/images/homefeed/music-campaing-3-2600-large.jpg" alt="custom-header-background"/></div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark header_content custom-header__desktop"><a class="navbar-brand header__logo" href="./index.html"><span class="content-logo">Gondet</span></a>
+          <form class="form-inline my-2 my-lg-0 input-group form-search mr-auto">
+            <div class="input-group-prepend" id="icon-search-mobile">
+              <button class="btn my-2 my-sm-0" id="button-search-addon" type="button"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="input-group-prepend">
+              <button class="btn my-2 my-sm-0" id="button-search-addon" type="submit"><i class="fas fa-search"></i></button>
+            </div>
+            <input class="form-control form-search-input" type="search" placeholder="Search" aria-label="Search" aria-describedby="button-search-addon"/>
+          </form>
+          <form class="form-inline my-2 my-lg-0 input-group mr-auto" id="form-search-mobile">
+            <div class="input-group-prepend">
+              <button class="btn my-2 my-sm-0" id="button-search-addon" type="submit"><i class="fas fa-search"></i></button>
+            </div>
+            <input class="form-control form-search-input" type="search" placeholder="Search" aria-label="Search" aria-describedby="button-search-addon"/>
+          </form>
+          <button class="navbar-toggler" id="isShowMenu" type="button"><span class="navbar-toggler-icon"></span></button>
+          <div class="navbar-collapse nav-menu" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Categories</a></li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Help</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Create event</a></li>
+              <li class="nav-item"><a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Sign in</a></li>
+            </ul>
+            <button id="close-menu"><i class="fas fa-times"></i></button>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="wrapper-content">
+      <section class="feed-header" style="margin-bottom:45px">
+        <div class="feed-header__main-blur__wrapper"><img class="feed-header__main-bg__blur feed-header__main-bg--blurred" src="https://cdn.evbstatic.com/s3-build/perm_001/6cc698/django/images/homefeed/music-campaing-3-2600-large.jpg" alt="consumer-header-background"/></div>
+        <div class="feed_header__content">
+          <div class="feed_header__main-bg-wrapper"><img class="feed_header__main-bg" src="https://cdn.evbstatic.com/s3-build/perm_001/6cc698/django/images/homefeed/music-campaing-3-2600-large.jpg" alt="consumer-header-background"/></div>
+          <div class="wrapper-content">
+            <div class="col-lg-8 col-md-6 d-flex align-center px-4">
+              <div class="title">
+                <h2>Made for</h2>
+                <h1>those who do</h1>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <section class="feed_header__madlibs">
+                <form class="madlibs">
+                  <div class="form-select">
+                    <label>I want to go out</label>
+                    <select class="eds-field-styled__input eds-field-styled__select" id="madlibs-date-selector" role="listbox">
+                      <option selected="" value="" data-spec="select-option">Any date</option>
+                      <option value="today" data-spec="select-option">Today</option>
+                      <option value="tomorrow" data-spec="select-option">Tomorrow</option>
+                      <option value="this_weekend" data-spec="select-option">This weekend</option>
+                      <option value="this_week" data-spec="select-option">This week</option>
+                      <option value="next_week" data-spec="select-option">Next week</option>
+                      <option value="this_month" data-spec="select-option">This month</option>
+                      <option value="next_month" data-spec="select-option">Next month</option>
+                      <option value="custom_date" data-spec="select-option">Pick a date...</option>
+                    </select>
+                  </div>
+                  <div class="form-select">
+                    <label>In</label>
+                    <input class="eds-field-styled__input" id="madlibs-locationPicker" data-spec="input-field-input-element" name="madlibs-locationPicker" role="combobox" type="text" aria-expanded="false" aria-autocomplete="list" autocomplete="off" tabindex="0" value="Hồ Chí Minh city"/>
+                  </div>
+                  <div class="form-select">
+                    <label>I want to go out</label>
+                    <select class="eds-field-styled__input eds-field-styled__select" id="madlibs-mood-selector" role="listbox">
+                      <option selected="" value="" data-spec="select-option">Anything</option>
+                      <option value="EventbriteCategory/101" data-spec="select-option">Business</option>
+                      <option value="EventbriteCategory/102" data-spec="select-option">Science &amp; Tech</option>
+                      <option value="EventbriteCategory/103" data-spec="select-option">Music</option>
+                      <option value="EventbriteCategory/104" data-spec="select-option">Film &amp; Media</option>
+                      <option value="EventbriteCategory/105" data-spec="select-option">Performing &amp; Visual Arts</option>
+                      <option value="EventbriteCategory/106" data-spec="select-option">Fashion</option>
+                      <option value="EventbriteCategory/107" data-spec="select-option">Health</option>
+                      <option value="EventbriteCategory/108" data-spec="select-option">Sports &amp; Fitness</option>
+                      <option value="EventbriteCategory/109" data-spec="select-option">Travel &amp; Outdoor</option>
+                      <option value="EventbriteCategory/110" data-spec="select-option">Food &amp; Drink</option>
+                      <option value="EventbriteCategory/111" data-spec="select-option">Charity &amp; Causes</option>
+                      <option value="EventbriteCategory/112" data-spec="select-option">Government</option>
+                      <option value="EventbriteCategory/113" data-spec="select-option">Community</option>
+                      <option value="EventbriteCategory/114" data-spec="select-option">Spirituality</option>
+                      <option value="EventbriteCategory/115" data-spec="select-option">Family &amp; Education</option>
+                      <option value="EventbriteCategory/116" data-spec="select-option">Holiday</option>
+                      <option value="EventbriteCategory/117" data-spec="select-option">Home &amp; Lifestyle</option>
+                      <option value="EventbriteCategory/118" data-spec="select-option">Auto, Boat &amp; Air</option>
+                      <option value="EventbriteCategory/119" data-spec="select-option">Hobbies</option>
+                      <option value="EventbriteCategory/120" data-spec="select-option">School Activities</option>
+                      <option value="EventbriteCategory/199" data-spec="select-option">Other</option>
+                    </select>
+                  </div>
+                </form>
+                <button class="btn-next" type="submit"><i class="fas fa-arrow-right"></i></button>
+              </section>
+            </div>
+          </div>
+          <div class="feed_header__attribution"><span>Simpson at Great American Music Hall</span></div>
+        </div>
+      </section>
+      <div class="btn-event">
+        <button class="btn-event-down">
+          Browse other popular events<i class="fas fa-chevron-down" style="display:block; font-size: 13px;"></i></button>
+      </div>
+      <div class="wrapper-content-tab container">
+        <div class="browse__location">
+          <h3>Popular in</h3>
+          <div class="form-control-location">
+            <input placeholder="Hồ Chí Minh city"/>
+          </div>
+        </div>
+        <div class="content-tab">
+          <ul class="tabs-content">
+            <li class="tab-link current" data-tab="tab-1">All</li>
+            <li class="tab-link" data-tab="tab-2">For you</li>
+            <li class="tab-link" data-tab="tab-3">This weekend</li>
+            <li class="tab-link" data-tab="tab-4">Free</li>
+            <li class="tab-link" data-tab="tab-5">Music</li>
+            <li class="tab-link" data-tab="tab-6">Food and Drink</li>
+            <li class="tab-link" data-tab="tab-7">Charity and Causes</li>
+          </ul>
+          <div class="wrapper-tab-content">
+            <div class="tab-content current" id="tab-1">
+              <div class="container">
+                <div class="title">
+                  <h3>Events in Hồ Chí Minh City</h3>
+                </div>
+                <div class="row">
+                  <div class="col-lg-3 col-md-4 col-sm-6 mb-4"><a href="./room.html">
+                      <div class="box-content">
+                        <div class="box-img"><span>Free</span><img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F53685786%2F239078127498%2F1%2Foriginal.jpg?h=512&amp;w=512&amp;auto=compress&amp;rect=3%2C0%2C2744%2C1372&amp;s=3e3cc7478a9ea026c7d521b2f4c9a357" alt=""/></div>
+                        <div class="text-box">
+                          <div class="text-content">
+                            <p>Sat, Nov 9</p><a href="#">
+                              <h3>Technologies That Empower E-commerce Business in Vietnam and Beyond</h3></a><span>Grand Hotel Saigon, Ho Chi Minh City, Vietnam</span>
+                          </div>
+                          <div class="icon">
+                            <button><i class="far fa-heart"></i></button>
+                            <button><i class="far fa-heart"></i></button>
+                          </div>
+                        </div>
+                      </div></a></div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 mb-4"><a href="./room.html">
+                      <div class="box-content box-content-flex">
+                        <div class="box-img"><img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F72213741%2F178938166142%2F1%2Foriginal.jpg?h=512&amp;w=512&amp;auto=compress&amp;rect=0%2C133%2C1600%2C800&amp;s=87e9c8fa63da4ba4b793c30e0e41dd6e" alt=""/></div>
+                        <div class="text-box">
+                          <div class="text-content">
+                            <p>Sat, Nov 9</p><a href="#">
+                              <h3>ĐÁNH THỨC SỰ GIÀU CÓ 44 - Tp. Hồ Chí Minh  (Lịch dự kiến)</h3></a><span>Grand Hotel Saigon, Ho Chi Minh City, Vietnam</span>
+                          </div>
+                          <div class="icon">
+                            <button><i class="far fa-heart"></i></button>
+                            <button><i class="far fa-heart"></i></button>
+                          </div>
+                        </div>
+                      </div></a></div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 mb-4"><a href="./room.html">
+                      <div class="box-content box-content-flex">
+                        <div class="box-img"><span>Free</span><img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F53685786%2F239078127498%2F1%2Foriginal.jpg?h=512&amp;w=512&amp;auto=compress&amp;rect=3%2C0%2C2744%2C1372&amp;s=3e3cc7478a9ea026c7d521b2f4c9a357" alt=""/></div>
+                        <div class="text-box">
+                          <div class="text-content">
+                            <p>Sat, Nov 9</p><a href="#">
+                              <h3>Technologies That Empower E-commerce Business in Vietnam and Beyond</h3></a><span>Grand Hotel Saigon, Ho Chi Minh City, Vietnam</span>
+                          </div>
+                          <div class="icon">
+                            <button><i class="far fa-heart"></i></button>
+                            <button><i class="far fa-heart"></i></button>
+                          </div>
+                        </div>
+                      </div></a></div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="banner"><img src="https://cdn.evbstatic.com/s3-build/perm_001/ad8d44/django/images/onboarding/desktop_entry_2.jpg" alt=""/>
+                      <div class="text-banner">
+                        <h3>Tell us what you love</h3>
+                        <p>We'll find event recommendations just for you</p><a class="btn btn-danger" href="#">Get started</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="box-content box-content-flex">
+                      <div class="box-img"><span>Free</span><img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F79751539%2F140252006469%2F1%2Foriginal.20191107-024832?h=512&amp;w=512&amp;auto=compress&amp;rect=0%2C245%2C864%2C432&amp;s=5987bf475e250ef25ebbb84b4445cc8e" alt=""/></div>
+                      <div class="text-box">
+                        <div class="text-content">
+                          <p>Sat, Nov 9</p><a href="#">
+                            <h3>Technologies That Empower E-commerce Business in Vietnam and Beyond</h3></a><span>Grand Hotel Saigon, Ho Chi Minh City, Vietnam</span>
+                        </div>
+                        <div class="icon">
+                          <button><i class="far fa-heart"></i></button>
+                          <button><i class="far fa-heart"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="box-content box-content-flex">
+                      <div class="box-img"><span>Free</span><img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F53685786%2F239078127498%2F1%2Foriginal.jpg?h=512&amp;w=512&amp;auto=compress&amp;rect=3%2C0%2C2744%2C1372&amp;s=3e3cc7478a9ea026c7d521b2f4c9a357" alt=""/></div>
+                      <div class="text-box">
+                        <div class="text-content">
+                          <p>Sat, Nov 9</p><a href="#">
+                            <h3>ĐÁNH THỨC SỰ GIÀU CÓ 44 - Tp. Hồ Chí Minh  (Lịch dự kiến)</h3></a><span>Grand Hotel Saigon, Ho Chi Minh City, Vietnam</span>
+                        </div>
+                        <div class="icon">
+                          <button><i class="far fa-heart"></i></button>
+                          <button><i class="far fa-heart"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="box-content box-content-flex">
+                      <div class="box-img"><span>Free</span><img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F53685786%2F239078127498%2F1%2Foriginal.jpg?h=512&amp;w=512&amp;auto=compress&amp;rect=3%2C0%2C2744%2C1372&amp;s=3e3cc7478a9ea026c7d521b2f4c9a357" alt=""/></div>
+                      <div class="text-box">
+                        <div class="text-content">
+                          <p>Sat, Nov 9</p><a href="#">
+                            <h3>Technologies That Empower E-commerce Business in Vietnam and Beyond</h3></a><span>Grand Hotel Saigon, Ho Chi Minh City, Vietnam</span>
+                        </div>
+                        <div class="icon">
+                          <button><i class="far fa-heart"></i></button>
+                          <button><i class="far fa-heart"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="box-content box-content-flex">
+                      <div class="box-img"><span>Free</span><img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F53685786%2F239078127498%2F1%2Foriginal.jpg?h=512&amp;w=512&amp;auto=compress&amp;rect=3%2C0%2C2744%2C1372&amp;s=3e3cc7478a9ea026c7d521b2f4c9a357" alt=""/></div>
+                      <div class="text-box">
+                        <div class="text-content">
+                          <p>Sat, Nov 9</p><a href="#">
+                            <h3>ĐÁNH THỨC SỰ GIÀU CÓ 44 - Tp. Hồ Chí Minh  (Lịch dự kiến)</h3></a><span>Grand Hotel Saigon, Ho Chi Minh City, Vietnam</span>
+                        </div>
+                        <div class="icon">
+                          <button><i class="far fa-heart"></i></button>
+                          <button><i class="far fa-heart"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr/>
+              <div class="container">
+                <div class="title">
+                  <h3>More events</h3>
+                </div>
+                <div class="row">
+                  <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="box-content">
+                      <div class="box-img"><span>Free</span><img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F53685786%2F239078127498%2F1%2Foriginal.jpg?h=512&amp;w=512&amp;auto=compress&amp;rect=3%2C0%2C2744%2C1372&amp;s=3e3cc7478a9ea026c7d521b2f4c9a357" alt=""/></div>
+                      <div class="text-box">
+                        <div class="text-content">
+                          <p>Sat, Nov 9</p><a href="#">
+                            <h3>Technologies That Empower E-commerce Business in Vietnam and Beyond</h3></a><span>Grand Hotel Saigon, Ho Chi Minh City, Vietnam</span>
+                        </div>
+                        <div class="icon">
+                          <button><i class="far fa-heart"></i></button>
+                          <button><i class="far fa-heart"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="box-content box-content-flex">
+                      <div class="box-img"><span>Free</span><img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F53685786%2F239078127498%2F1%2Foriginal.jpg?h=512&amp;w=512&amp;auto=compress&amp;rect=3%2C0%2C2744%2C1372&amp;s=3e3cc7478a9ea026c7d521b2f4c9a357" alt=""/></div>
+                      <div class="text-box">
+                        <div class="text-content">
+                          <p>Sat, Nov 9</p><a href="#">
+                            <h3>Technologies That Empower E-commerce Business in Vietnam and Beyond</h3></a><span>Grand Hotel Saigon, Ho Chi Minh City, Vietnam</span>
+                        </div>
+                        <div class="icon">
+                          <button><i class="far fa-heart"></i></button>
+                          <button><i class="far fa-heart"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="box-content box-content-flex">
+                      <div class="box-img"><span>Free</span><img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F53685786%2F239078127498%2F1%2Foriginal.jpg?h=512&amp;w=512&amp;auto=compress&amp;rect=3%2C0%2C2744%2C1372&amp;s=3e3cc7478a9ea026c7d521b2f4c9a357" alt=""/></div>
+                      <div class="text-box">
+                        <div class="text-content">
+                          <p>Sat, Nov 9</p><a href="#">
+                            <h3>Technologies That Empower E-commerce Business in Vietnam and Beyond</h3></a><span>Grand Hotel Saigon, Ho Chi Minh City, Vietnam</span>
+                        </div>
+                        <div class="icon">
+                          <button><i class="far fa-heart"></i></button>
+                          <button><i class="far fa-heart"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="box-content box-content-flex">
+                      <div class="box-img"><span>Free</span><img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F53685786%2F239078127498%2F1%2Foriginal.jpg?h=512&amp;w=512&amp;auto=compress&amp;rect=3%2C0%2C2744%2C1372&amp;s=3e3cc7478a9ea026c7d521b2f4c9a357" alt=""/></div>
+                      <div class="text-box">
+                        <div class="text-content">
+                          <p>Sat, Nov 9</p><a href="#">
+                            <h3>Technologies That Empower E-commerce Business in Vietnam and Beyond</h3></a><span>Grand Hotel Saigon, Ho Chi Minh City, Vietnam</span>
+                        </div>
+                        <div class="icon">
+                          <button><i class="far fa-heart"></i></button>
+                          <button><i class="far fa-heart"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="box-content box-content-flex">
+                      <div class="box-img"><span>Free</span><img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F53685786%2F239078127498%2F1%2Foriginal.jpg?h=512&amp;w=512&amp;auto=compress&amp;rect=3%2C0%2C2744%2C1372&amp;s=3e3cc7478a9ea026c7d521b2f4c9a357" alt=""/></div>
+                      <div class="text-box">
+                        <div class="text-content">
+                          <p>Sat, Nov 9</p><a href="#">
+                            <h3>Technologies That Empower E-commerce Business in Vietnam and Beyond</h3></a><span>Grand Hotel Saigon, Ho Chi Minh City, Vietnam</span>
+                        </div>
+                        <div class="icon">
+                          <button><i class="far fa-heart"></i></button>
+                          <button><i class="far fa-heart"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="box-content box-content-flex">
+                      <div class="box-img"><span>Free</span><img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F53685786%2F239078127498%2F1%2Foriginal.jpg?h=512&amp;w=512&amp;auto=compress&amp;rect=3%2C0%2C2744%2C1372&amp;s=3e3cc7478a9ea026c7d521b2f4c9a357" alt=""/></div>
+                      <div class="text-box">
+                        <div class="text-content">
+                          <p>Sat, Nov 9</p><a href="#">
+                            <h3>Technologies That Empower E-commerce Business in Vietnam and Beyond</h3></a><span>Grand Hotel Saigon, Ho Chi Minh City, Vietnam</span>
+                        </div>
+                        <div class="icon">
+                          <button><i class="far fa-heart"></i></button>
+                          <button><i class="far fa-heart"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="box-content box-content-flex">
+                      <div class="box-img"><span>Free</span><img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F53685786%2F239078127498%2F1%2Foriginal.jpg?h=512&amp;w=512&amp;auto=compress&amp;rect=3%2C0%2C2744%2C1372&amp;s=3e3cc7478a9ea026c7d521b2f4c9a357" alt=""/></div>
+                      <div class="text-box">
+                        <div class="text-content">
+                          <p>Sat, Nov 9</p><a href="#">
+                            <h3>Technologies That Empower E-commerce Business in Vietnam and Beyond</h3></a><span>Grand Hotel Saigon, Ho Chi Minh City, Vietnam</span>
+                        </div>
+                        <div class="icon">
+                          <button><i class="far fa-heart"></i></button>
+                          <button><i class="far fa-heart"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="box-content box-content-flex">
+                      <div class="box-img"><span>Free</span><img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F53685786%2F239078127498%2F1%2Foriginal.jpg?h=512&amp;w=512&amp;auto=compress&amp;rect=3%2C0%2C2744%2C1372&amp;s=3e3cc7478a9ea026c7d521b2f4c9a357" alt=""/></div>
+                      <div class="text-box">
+                        <div class="text-content">
+                          <p>Sat, Nov 9</p><a href="#">
+                            <h3>Technologies That Empower E-commerce Business in Vietnam and Beyond</h3></a><span>Grand Hotel Saigon, Ho Chi Minh City, Vietnam</span>
+                        </div>
+                        <div class="icon">
+                          <button><i class="far fa-heart"></i></button>
+                          <button><i class="far fa-heart"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="box-content">
+                      <div class="box-img"><span>Free</span><img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F53685786%2F239078127498%2F1%2Foriginal.jpg?h=512&amp;w=512&amp;auto=compress&amp;rect=3%2C0%2C2744%2C1372&amp;s=3e3cc7478a9ea026c7d521b2f4c9a357" alt=""/></div>
+                      <div class="text-box">
+                        <div class="text-content">
+                          <p>Sat, Nov 9</p><a href="#">
+                            <h3>Technologies That Empower E-commerce Business in Vietnam and Beyond</h3></a><span>Grand Hotel Saigon, Ho Chi Minh City, Vietnam</span>
+                        </div>
+                        <div class="icon">
+                          <button><i class="far fa-heart"></i></button>
+                          <button><i class="far fa-heart"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="box-content box-content-flex">
+                      <div class="box-img"><span>Free</span><img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F53685786%2F239078127498%2F1%2Foriginal.jpg?h=512&amp;w=512&amp;auto=compress&amp;rect=3%2C0%2C2744%2C1372&amp;s=3e3cc7478a9ea026c7d521b2f4c9a357" alt=""/></div>
+                      <div class="text-box">
+                        <div class="text-content">
+                          <p>Sat, Nov 9</p><a href="#">
+                            <h3>Technologies That Empower E-commerce Business in Vietnam and Beyond</h3></a><span>Grand Hotel Saigon, Ho Chi Minh City, Vietnam</span>
+                        </div>
+                        <div class="icon">
+                          <button><i class="far fa-heart"></i></button>
+                          <button><i class="far fa-heart"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="box-content box-content-flex">
+                      <div class="box-img"><span>Free</span><img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F53685786%2F239078127498%2F1%2Foriginal.jpg?h=512&amp;w=512&amp;auto=compress&amp;rect=3%2C0%2C2744%2C1372&amp;s=3e3cc7478a9ea026c7d521b2f4c9a357" alt=""/></div>
+                      <div class="text-box">
+                        <div class="text-content">
+                          <p>Sat, Nov 9</p><a href="#">
+                            <h3>Technologies That Empower E-commerce Business in Vietnam and Beyond</h3></a><span>Grand Hotel Saigon, Ho Chi Minh City, Vietnam</span>
+                        </div>
+                        <div class="icon">
+                          <button><i class="far fa-heart"></i></button>
+                          <button><i class="far fa-heart"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="box-content box-content-flex">
+                      <div class="box-img"><span>Free</span><img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F53685786%2F239078127498%2F1%2Foriginal.jpg?h=512&amp;w=512&amp;auto=compress&amp;rect=3%2C0%2C2744%2C1372&amp;s=3e3cc7478a9ea026c7d521b2f4c9a357" alt=""/></div>
+                      <div class="text-box">
+                        <div class="text-content">
+                          <p>Sat, Nov 9</p><a href="#">
+                            <h3>Technologies That Empower E-commerce Business in Vietnam and Beyond</h3></a><span>Grand Hotel Saigon, Ho Chi Minh City, Vietnam</span>
+                        </div>
+                        <div class="icon">
+                          <button><i class="far fa-heart"></i></button>
+                          <button><i class="far fa-heart"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="box-content box-content-flex">
+                      <div class="box-img"><span>Free</span><img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F53685786%2F239078127498%2F1%2Foriginal.jpg?h=512&amp;w=512&amp;auto=compress&amp;rect=3%2C0%2C2744%2C1372&amp;s=3e3cc7478a9ea026c7d521b2f4c9a357" alt=""/></div>
+                      <div class="text-box">
+                        <div class="text-content">
+                          <p>Sat, Nov 9</p><a href="#">
+                            <h3>Technologies That Empower E-commerce Business in Vietnam and Beyond</h3></a><span>Grand Hotel Saigon, Ho Chi Minh City, Vietnam</span>
+                        </div>
+                        <div class="icon">
+                          <button><i class="far fa-heart"></i></button>
+                          <button><i class="far fa-heart"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="box-content box-content-flex">
+                      <div class="box-img"><span>Free</span><img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F53685786%2F239078127498%2F1%2Foriginal.jpg?h=512&amp;w=512&amp;auto=compress&amp;rect=3%2C0%2C2744%2C1372&amp;s=3e3cc7478a9ea026c7d521b2f4c9a357" alt=""/></div>
+                      <div class="text-box">
+                        <div class="text-content">
+                          <p>Sat, Nov 9</p><a href="#">
+                            <h3>Lorem, ipsum dolor.</h3></a><span>Grand Hotel Saigon, Ho Chi Minh City, Vietnam</span>
+                        </div>
+                        <div class="icon">
+                          <button><i class="far fa-heart"></i></button>
+                          <button><i class="far fa-heart"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="box-content box-content-flex">
+                      <div class="box-img"><span>Free</span><img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F53685786%2F239078127498%2F1%2Foriginal.jpg?h=512&amp;w=512&amp;auto=compress&amp;rect=3%2C0%2C2744%2C1372&amp;s=3e3cc7478a9ea026c7d521b2f4c9a357" alt=""/></div>
+                      <div class="text-box">
+                        <div class="text-content">
+                          <p>Sat, Nov 9</p><a href="#">
+                            <h3>Technologies That Empower E-commerce Business in Vietnam and Beyond</h3></a><span>Grand Hotel Saigon, Ho Chi Minh City, Vietnam</span>
+                        </div>
+                        <div class="icon">
+                          <button><i class="far fa-heart"></i></button>
+                          <button><i class="far fa-heart"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="box-content box-content-flex">
+                      <div class="box-img"><span>Free</span><img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F53685786%2F239078127498%2F1%2Foriginal.jpg?h=512&amp;w=512&amp;auto=compress&amp;rect=3%2C0%2C2744%2C1372&amp;s=3e3cc7478a9ea026c7d521b2f4c9a357" alt=""/></div>
+                      <div class="text-box">
+                        <div class="text-content">
+                          <p>Sat, Nov 9</p><a href="#">
+                            <h3>Lorem ipsum dolor sit amet consectetur.</h3></a><span>Grand Hotel Saigon, Ho Chi Minh City, Vietnam</span>
+                        </div>
+                        <div class="icon">
+                          <button><i class="far fa-heart"></i></button>
+                          <button><i class="far fa-heart"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="btn-more"><a href="#">See more</a></div>
+            </div>
+            <div class="tab-content" id="tab-2">
+              <p>Tab 2</p>
+            </div>
+            <div class="tab-content" id="tab-3">
+              <p>Tab 3</p>
+            </div>
+            <div class="tab-content" id="tab-4">
+              <p>Tab 4  </p>
+            </div>
+            <div class="tab-content" id="tab-5">
+              <p>Tab 5</p>
+            </div>
+            <div class="tab-content" id="tab-6">
+              <p>Tab 6  </p>
+            </div>
+            <div class="tab-content" id="tab-7">
+              <p>Tab 7  </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="top-footer">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="text-box">
+              <h6>Use Eventbrite</h6>
+              <ul>
+                <li><a href="#">How It Works</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Eventbrite Mobile App</a></li>
+                <li><a href="#">Eventbrite Check-In App</a></li>
+                <li><a href="#">Eventbrite App Marketplace</a></li>
+                <li><a href="#">Content Standards</a></li>
+                <li><a href="#">Sitemap</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="text-box">
+              <h6>Use Eventbrite</h6>
+              <ul>
+                <li><a href="#">How It Works</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Eventbrite Mobile App</a></li>
+                <li><a href="#">Eventbrite Check-In App</a></li>
+                <li><a href="#">Eventbrite App Marketplace</a></li>
+                <li><a href="#">Content Standards</a></li>
+                <li><a href="#">Sitemap</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="text-box">
+              <h6>Use Eventbrite</h6>
+              <ul>
+                <li><a href="#">How It Works</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Eventbrite Mobile App</a></li>
+                <li><a href="#">Eventbrite Check-In App</a></li>
+                <li><a href="#">Eventbrite App Marketplace</a></li>
+                <li><a href="#">Content Standards</a></li>
+                <li><a href="#">Sitemap</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="text-box">
+              <h6>Use Eventbrite</h6>
+              <ul>
+                <li><a href="#">How It Works</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Eventbrite Mobile App</a></li>
+                <li><a href="#">Eventbrite Check-In App</a></li>
+                <li><a href="#">Eventbrite App Marketplace</a></li>
+                <li><a href="#">Content Standards</a></li>
+                <li><a href="#">Sitemap</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom my-3">
+        <div class="row">
+          <div class="col-md-2"><span class="copy-right">&copy 2019 Eventbrite</span></div>
+          <div class="col-md-8">
+            <ul class="row justify-content-center">
+              <li> <a class="hide-item" href="#">How It Works</a></li>
+              <li> <a class="hide-item" href="#">Pricing</a></li>
+              <li> <a class="hide-item" href="#">Contact Support</a></li>
+              <li> <a href="#">About</a></li>
+              <li> <a href="#">Blog</a></li>
+              <li> <a href="#">Help</a></li>
+              <li> <a href="#">Careers</a></li>
+              <li> <a href="#">Press</a></li>
+              <li> <a href="#">Investors</a></li>
+              <li> <a href="#">Security</a></li>
+              <li> <a href="#">Developers</a></li>
+              <li> <a href="#">Terms</a></li>
+              <li> <a href="#">Privacy</a></li>
+              <li> <a href="#">Cookies</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <select>
+              <option>Singapore</option>
+              <option>Canada</option>
+              <option>Italia</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/header.js"></script>
+  </body>
+</html>

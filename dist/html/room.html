@@ -13,11 +13,8 @@
   </head>
   <body>
     <div class="bg-body"></div>
-    <header class="wrapper-header">
+    <header class="wrapper-header header-sub">
       <div class="header-main">
-        <div class="header_container">
-          <div class="header__main-bg-wrapper header__main-bg-custom"><img class="header__main-bg" src="https://cdn.evbstatic.com/s3-build/perm_001/6cc698/django/images/homefeed/music-campaing-3-2600-large.jpg" alt="custom-header-background"/><img class="header__main-bg header__main-bg--blurred" src="https://cdn.evbstatic.com/s3-build/perm_001/6cc698/django/images/homefeed/music-campaing-3-2600-large.jpg" alt="custom-header-background"/></div>
-        </div>
         <nav class="navbar navbar-expand-lg navbar-dark header_content custom-header__desktop"><a class="navbar-brand header__logo" href="./index.html"><span class="content-logo">Gondet</span></a>
           <form class="form-inline my-2 my-lg-0 input-group form-search mr-auto">
             <div class="input-group-prepend" id="icon-search-mobile">
@@ -34,7 +31,7 @@
             </div>
             <input class="form-control form-search-input" type="search" placeholder="Search" aria-label="Search" aria-describedby="button-search-addon"/>
           </form>
-          <button class="navbar-toggler" id="isShowMenu" type="button"><span class="navbar-toggler-icon"></span></button>
+          <button class="navbar-toggler op-menu" id="isShowMenu" type="button"><span class="wrapper-op-menu"><span class="icon-op-menu"></span></span></button>
           <div class="navbar-collapse nav-menu" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a></li>
@@ -71,13 +68,13 @@
                 <p class="showcase-info-author">  by GlobalSouthTech
                   <button>Follow</button>
                 </p>
-                <p class="showcase-info-price">Free</p>
+                <p class="showcase-info-price">Hot</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="container px-0">
+      <div class="container px-0 my-3">
         <div class="room-panel">
           <ul class="nav nav-tabs" role="tablist">
             <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#overview" role="tab">Overview</a></li>
@@ -96,6 +93,14 @@
                     <p>Event Topic: Technologies that empower E-commerce business in Vietnam.</p>
                     <h4>Description:</h4>
                     <p>More and more people nowadays turn to online shopping to handle most of their needs. Driven by the convenience of buying and selling online and getting products right at our doors, eCommerce has become an integral part of many people’s life. The development of new technologies and the 4th industrial revolution has made it easier than ever for eCommerce companies to run their business with effective solutions to handle inventory and customer/client management, acquire and support customers/ clients etc. Buying and selling online have never become so convenient and cost-effective thanks to technologies.</p>
+                    <h4>Share With Friends:</h4>
+                    <div class="share d-flex">
+                      <div class="facebook icon"><a href="#"><i class="fab fa-facebook-f"></i></a></div>
+                      <div class="mesenger icon"><a href="#"><i class="fab fa-facebook-messenger"></i></a></div>
+                      <div class="linkedln icon"><a href="#"><i class="fab fa-linkedin-in"></i></a></div>
+                      <div class="twitter icon"><a href="#"><i class="fab fa-twitter"></i></a></div>
+                      <div class="email icon"><a href="#"><i class="far fa-envelope"></i></a></div>
+                    </div>
                   </div>
                 </div>
                 <div class="col-md-5 ml-5 ml-md-0">
@@ -107,7 +112,7 @@
                     <h4>Location</h4>
                     <p class="m-0">Trung tâm Hội nghị Queen Plaza Kỳ Hòa</p>
                     <p class="m-0">16A Lê Hồng Phong (nối dài), Phường 12 </p>
-                    <p><a href="#">View Map</a></p>
+                    <p><a href="#viewmap">View Map</a></p>
                   </div>
                 </div>
               </div>
@@ -118,205 +123,193 @@
                   <h3>Room List</h3>
                 </div>
                 <div class="row">
-                  <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="box-content">
-                      <div class="box-img"><span>Free</span><img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F53685786%2F239078127498%2F1%2Foriginal.jpg?h=512&amp;w=512&amp;auto=compress&amp;rect=3%2C0%2C2744%2C1372&amp;s=3e3cc7478a9ea026c7d521b2f4c9a357" alt=""/></div>
-                      <div class="text-box">
-                        <div class="text-content">
-                          <p>Sat, Nov 9</p><a href="#">
-                            <h3>Technologies That Empower E-commerce Business in Vietnam and Beyond</h3></a><span>Grand Hotel Saigon, Ho Chi Minh City, Vietnam</span>
+                  <div class="col-lg-3 col-md-4 col-sm-6 mb-4"><a href="./room-detail.html">
+                      <div class="box-content">
+                        <div class="box-img"><span>Hot</span><img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F53685786%2F239078127498%2F1%2Foriginal.jpg?h=512&amp;w=512&amp;auto=compress&amp;rect=3%2C0%2C2744%2C1372&amp;s=3e3cc7478a9ea026c7d521b2f4c9a357" alt=""/></div>
+                        <div class="text-box">
+                          <div class="text-content">
+                            <p>Sat, Nov 9</p><a href="#">
+                              <h3>Technologies That Empower E-commerce Business in Vietnam and Beyond</h3></a><span>Grand Hotel Saigon, Ho Chi Minh City, Vietnam</span>
+                          </div>
+                          <div class="icon">
+                            <button><i class="fas fa-share"></i></button>
+                            <button><i class="far fa-heart"></i></button>
+                          </div>
                         </div>
-                        <div class="icon">
-                          <button><i class="far fa-heart"></i></button>
-                          <button><i class="far fa-heart"></i></button>
+                      </div></a></div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 mb-4"><a href="./room-detail.html">
+                      <div class="box-content">
+                        <div class="box-img"><span>Hot</span><img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F53685786%2F239078127498%2F1%2Foriginal.jpg?h=512&amp;w=512&amp;auto=compress&amp;rect=3%2C0%2C2744%2C1372&amp;s=3e3cc7478a9ea026c7d521b2f4c9a357" alt=""/></div>
+                        <div class="text-box">
+                          <div class="text-content">
+                            <p>Sat, Nov 9</p><a href="#">
+                              <h3>Technologies That Empower E-commerce Business in Vietnam and Beyond</h3></a><span>Grand Hotel Saigon, Ho Chi Minh City, Vietnam</span>
+                          </div>
+                          <div class="icon">
+                            <button><i class="fas fa-share"></i></button>
+                            <button><i class="far fa-heart"></i></button>
+                          </div>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="box-content">
-                      <div class="box-img"><span>Free</span><img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F53685786%2F239078127498%2F1%2Foriginal.jpg?h=512&amp;w=512&amp;auto=compress&amp;rect=3%2C0%2C2744%2C1372&amp;s=3e3cc7478a9ea026c7d521b2f4c9a357" alt=""/></div>
-                      <div class="text-box">
-                        <div class="text-content">
-                          <p>Sat, Nov 9</p><a href="#">
-                            <h3>Technologies That Empower E-commerce Business in Vietnam and Beyond</h3></a><span>Grand Hotel Saigon, Ho Chi Minh City, Vietnam</span>
+                      </div></a></div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 mb-4"><a href="./room-detail.html">
+                      <div class="box-content">
+                        <div class="box-img"><span>Hot</span><img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F53685786%2F239078127498%2F1%2Foriginal.jpg?h=512&amp;w=512&amp;auto=compress&amp;rect=3%2C0%2C2744%2C1372&amp;s=3e3cc7478a9ea026c7d521b2f4c9a357" alt=""/></div>
+                        <div class="text-box">
+                          <div class="text-content">
+                            <p>Sat, Nov 9</p><a href="#">
+                              <h3>Technologies That Empower E-commerce Business in Vietnam and Beyond</h3></a><span>Grand Hotel Saigon, Ho Chi Minh City, Vietnam</span>
+                          </div>
+                          <div class="icon">
+                            <button><i class="fas fa-share"></i></button>
+                            <button><i class="far fa-heart"></i></button>
+                          </div>
                         </div>
-                        <div class="icon">
-                          <button><i class="far fa-heart"></i></button>
-                          <button><i class="far fa-heart"></i></button>
+                      </div></a></div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 mb-4"><a href="./room-detail.html">
+                      <div class="box-content">
+                        <div class="box-img"><span>Hot</span><img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F53685786%2F239078127498%2F1%2Foriginal.jpg?h=512&amp;w=512&amp;auto=compress&amp;rect=3%2C0%2C2744%2C1372&amp;s=3e3cc7478a9ea026c7d521b2f4c9a357" alt=""/></div>
+                        <div class="text-box">
+                          <div class="text-content">
+                            <p>Sat, Nov 9</p><a href="#">
+                              <h3>Technologies That Empower E-commerce Business in Vietnam and Beyond</h3></a><span>Grand Hotel Saigon, Ho Chi Minh City, Vietnam</span>
+                          </div>
+                          <div class="icon">
+                            <button><i class="fas fa-share"></i></button>
+                            <button><i class="far fa-heart"></i></button>
+                          </div>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="box-content">
-                      <div class="box-img"><span>Free</span><img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F53685786%2F239078127498%2F1%2Foriginal.jpg?h=512&amp;w=512&amp;auto=compress&amp;rect=3%2C0%2C2744%2C1372&amp;s=3e3cc7478a9ea026c7d521b2f4c9a357" alt=""/></div>
-                      <div class="text-box">
-                        <div class="text-content">
-                          <p>Sat, Nov 9</p><a href="#">
-                            <h3>Technologies That Empower E-commerce Business in Vietnam and Beyond</h3></a><span>Grand Hotel Saigon, Ho Chi Minh City, Vietnam</span>
+                      </div></a></div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 mb-4"><a href="./room-detail.html">
+                      <div class="box-content">
+                        <div class="box-img"><span>Hot</span><img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F53685786%2F239078127498%2F1%2Foriginal.jpg?h=512&amp;w=512&amp;auto=compress&amp;rect=3%2C0%2C2744%2C1372&amp;s=3e3cc7478a9ea026c7d521b2f4c9a357" alt=""/></div>
+                        <div class="text-box">
+                          <div class="text-content">
+                            <p>Sat, Nov 9</p><a href="#">
+                              <h3>Technologies That Empower E-commerce Business in Vietnam and Beyond</h3></a><span>Grand Hotel Saigon, Ho Chi Minh City, Vietnam</span>
+                          </div>
+                          <div class="icon">
+                            <button><i class="fas fa-share"></i></button>
+                            <button><i class="far fa-heart"></i></button>
+                          </div>
                         </div>
-                        <div class="icon">
-                          <button><i class="far fa-heart"></i></button>
-                          <button><i class="far fa-heart"></i></button>
+                      </div></a></div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 mb-4"><a href="./room-detail.html">
+                      <div class="box-content">
+                        <div class="box-img"><span>Hot</span><img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F53685786%2F239078127498%2F1%2Foriginal.jpg?h=512&amp;w=512&amp;auto=compress&amp;rect=3%2C0%2C2744%2C1372&amp;s=3e3cc7478a9ea026c7d521b2f4c9a357" alt=""/></div>
+                        <div class="text-box">
+                          <div class="text-content">
+                            <p>Sat, Nov 9</p><a href="#">
+                              <h3>Technologies That Empower E-commerce Business in Vietnam and Beyond</h3></a><span>Grand Hotel Saigon, Ho Chi Minh City, Vietnam</span>
+                          </div>
+                          <div class="icon">
+                            <button><i class="fas fa-share"></i></button>
+                            <button><i class="far fa-heart"></i></button>
+                          </div>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="box-content">
-                      <div class="box-img"><span>Free</span><img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F53685786%2F239078127498%2F1%2Foriginal.jpg?h=512&amp;w=512&amp;auto=compress&amp;rect=3%2C0%2C2744%2C1372&amp;s=3e3cc7478a9ea026c7d521b2f4c9a357" alt=""/></div>
-                      <div class="text-box">
-                        <div class="text-content">
-                          <p>Sat, Nov 9</p><a href="#">
-                            <h3>Technologies That Empower E-commerce Business in Vietnam and Beyond</h3></a><span>Grand Hotel Saigon, Ho Chi Minh City, Vietnam</span>
+                      </div></a></div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 mb-4"><a href="./room-detail.html">
+                      <div class="box-content">
+                        <div class="box-img"><span>Hot</span><img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F53685786%2F239078127498%2F1%2Foriginal.jpg?h=512&amp;w=512&amp;auto=compress&amp;rect=3%2C0%2C2744%2C1372&amp;s=3e3cc7478a9ea026c7d521b2f4c9a357" alt=""/></div>
+                        <div class="text-box">
+                          <div class="text-content">
+                            <p>Sat, Nov 9</p><a href="#">
+                              <h3>Technologies That Empower E-commerce Business in Vietnam and Beyond</h3></a><span>Grand Hotel Saigon, Ho Chi Minh City, Vietnam</span>
+                          </div>
+                          <div class="icon">
+                            <button><i class="fas fa-share"></i></button>
+                            <button><i class="far fa-heart"></i></button>
+                          </div>
                         </div>
-                        <div class="icon">
-                          <button><i class="far fa-heart"></i></button>
-                          <button><i class="far fa-heart"></i></button>
+                      </div></a></div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 mb-4"><a href="./room-detail.html">
+                      <div class="box-content">
+                        <div class="box-img"><span>Hot</span><img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F53685786%2F239078127498%2F1%2Foriginal.jpg?h=512&amp;w=512&amp;auto=compress&amp;rect=3%2C0%2C2744%2C1372&amp;s=3e3cc7478a9ea026c7d521b2f4c9a357" alt=""/></div>
+                        <div class="text-box">
+                          <div class="text-content">
+                            <p>Sat, Nov 9</p><a href="#">
+                              <h3>Technologies That Empower E-commerce Business in Vietnam and Beyond</h3></a><span>Grand Hotel Saigon, Ho Chi Minh City, Vietnam</span>
+                          </div>
+                          <div class="icon">
+                            <button><i class="fas fa-share"></i></button>
+                            <button><i class="far fa-heart"></i></button>
+                          </div>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="box-content">
-                      <div class="box-img"><span>Free</span><img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F53685786%2F239078127498%2F1%2Foriginal.jpg?h=512&amp;w=512&amp;auto=compress&amp;rect=3%2C0%2C2744%2C1372&amp;s=3e3cc7478a9ea026c7d521b2f4c9a357" alt=""/></div>
-                      <div class="text-box">
-                        <div class="text-content">
-                          <p>Sat, Nov 9</p><a href="#">
-                            <h3>Technologies That Empower E-commerce Business in Vietnam and Beyond</h3></a><span>Grand Hotel Saigon, Ho Chi Minh City, Vietnam</span>
+                      </div></a></div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 mb-4"><a href="./room-detail.html">
+                      <div class="box-content">
+                        <div class="box-img"><span>Hot</span><img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F53685786%2F239078127498%2F1%2Foriginal.jpg?h=512&amp;w=512&amp;auto=compress&amp;rect=3%2C0%2C2744%2C1372&amp;s=3e3cc7478a9ea026c7d521b2f4c9a357" alt=""/></div>
+                        <div class="text-box">
+                          <div class="text-content">
+                            <p>Sat, Nov 9</p><a href="#">
+                              <h3>Technologies That Empower E-commerce Business in Vietnam and Beyond</h3></a><span>Grand Hotel Saigon, Ho Chi Minh City, Vietnam</span>
+                          </div>
+                          <div class="icon">
+                            <button><i class="fas fa-share"></i></button>
+                            <button><i class="far fa-heart"></i></button>
+                          </div>
                         </div>
-                        <div class="icon">
-                          <button><i class="far fa-heart"></i></button>
-                          <button><i class="far fa-heart"></i></button>
+                      </div></a></div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 mb-4"><a href="./room-detail.html">
+                      <div class="box-content">
+                        <div class="box-img"><span>Hot</span><img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F53685786%2F239078127498%2F1%2Foriginal.jpg?h=512&amp;w=512&amp;auto=compress&amp;rect=3%2C0%2C2744%2C1372&amp;s=3e3cc7478a9ea026c7d521b2f4c9a357" alt=""/></div>
+                        <div class="text-box">
+                          <div class="text-content">
+                            <p>Sat, Nov 9</p><a href="#">
+                              <h3>Technologies That Empower E-commerce Business in Vietnam and Beyond</h3></a><span>Grand Hotel Saigon, Ho Chi Minh City, Vietnam</span>
+                          </div>
+                          <div class="icon">
+                            <button><i class="fas fa-share"></i></button>
+                            <button><i class="far fa-heart"></i></button>
+                          </div>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="box-content">
-                      <div class="box-img"><span>Free</span><img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F53685786%2F239078127498%2F1%2Foriginal.jpg?h=512&amp;w=512&amp;auto=compress&amp;rect=3%2C0%2C2744%2C1372&amp;s=3e3cc7478a9ea026c7d521b2f4c9a357" alt=""/></div>
-                      <div class="text-box">
-                        <div class="text-content">
-                          <p>Sat, Nov 9</p><a href="#">
-                            <h3>Technologies That Empower E-commerce Business in Vietnam and Beyond</h3></a><span>Grand Hotel Saigon, Ho Chi Minh City, Vietnam</span>
+                      </div></a></div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 mb-4"><a href="./room-detail.html">
+                      <div class="box-content">
+                        <div class="box-img"><span>Hot</span><img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F53685786%2F239078127498%2F1%2Foriginal.jpg?h=512&amp;w=512&amp;auto=compress&amp;rect=3%2C0%2C2744%2C1372&amp;s=3e3cc7478a9ea026c7d521b2f4c9a357" alt=""/></div>
+                        <div class="text-box">
+                          <div class="text-content">
+                            <p>Sat, Nov 9</p><a href="#">
+                              <h3>Technologies That Empower E-commerce Business in Vietnam and Beyond</h3></a><span>Grand Hotel Saigon, Ho Chi Minh City, Vietnam</span>
+                          </div>
+                          <div class="icon">
+                            <button><i class="fas fa-share"></i></button>
+                            <button><i class="far fa-heart"></i></button>
+                          </div>
                         </div>
-                        <div class="icon">
-                          <button><i class="far fa-heart"></i></button>
-                          <button><i class="far fa-heart"></i></button>
+                      </div></a></div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 mb-4"><a href="./room-detail.html">
+                      <div class="box-content">
+                        <div class="box-img"><span>Hot</span><img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F53685786%2F239078127498%2F1%2Foriginal.jpg?h=512&amp;w=512&amp;auto=compress&amp;rect=3%2C0%2C2744%2C1372&amp;s=3e3cc7478a9ea026c7d521b2f4c9a357" alt=""/></div>
+                        <div class="text-box">
+                          <div class="text-content">
+                            <p>Sat, Nov 9</p><a href="#">
+                              <h3>Technologies That Empower E-commerce Business in Vietnam and Beyond</h3></a><span>Grand Hotel Saigon, Ho Chi Minh City, Vietnam</span>
+                          </div>
+                          <div class="icon">
+                            <button><i class="fas fa-share"></i></button>
+                            <button><i class="far fa-heart"></i></button>
+                          </div>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="box-content">
-                      <div class="box-img"><span>Free</span><img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F53685786%2F239078127498%2F1%2Foriginal.jpg?h=512&amp;w=512&amp;auto=compress&amp;rect=3%2C0%2C2744%2C1372&amp;s=3e3cc7478a9ea026c7d521b2f4c9a357" alt=""/></div>
-                      <div class="text-box">
-                        <div class="text-content">
-                          <p>Sat, Nov 9</p><a href="#">
-                            <h3>Technologies That Empower E-commerce Business in Vietnam and Beyond</h3></a><span>Grand Hotel Saigon, Ho Chi Minh City, Vietnam</span>
+                      </div></a></div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 mb-4"><a href="./room-detail.html">
+                      <div class="box-content">
+                        <div class="box-img"><span>Hot</span><img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F53685786%2F239078127498%2F1%2Foriginal.jpg?h=512&amp;w=512&amp;auto=compress&amp;rect=3%2C0%2C2744%2C1372&amp;s=3e3cc7478a9ea026c7d521b2f4c9a357" alt=""/></div>
+                        <div class="text-box">
+                          <div class="text-content">
+                            <p>Sat, Nov 9</p><a href="#">
+                              <h3>Technologies That Empower E-commerce Business in Vietnam and Beyond</h3></a><span>Grand Hotel Saigon, Ho Chi Minh City, Vietnam</span>
+                          </div>
+                          <div class="icon">
+                            <button><i class="fas fa-share"></i></button>
+                            <button><i class="far fa-heart"></i></button>
+                          </div>
                         </div>
-                        <div class="icon">
-                          <button><i class="far fa-heart"></i></button>
-                          <button><i class="far fa-heart"></i></button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="box-content">
-                      <div class="box-img"><span>Free</span><img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F53685786%2F239078127498%2F1%2Foriginal.jpg?h=512&amp;w=512&amp;auto=compress&amp;rect=3%2C0%2C2744%2C1372&amp;s=3e3cc7478a9ea026c7d521b2f4c9a357" alt=""/></div>
-                      <div class="text-box">
-                        <div class="text-content">
-                          <p>Sat, Nov 9</p><a href="#">
-                            <h3>Technologies That Empower E-commerce Business in Vietnam and Beyond</h3></a><span>Grand Hotel Saigon, Ho Chi Minh City, Vietnam</span>
-                        </div>
-                        <div class="icon">
-                          <button><i class="far fa-heart"></i></button>
-                          <button><i class="far fa-heart"></i></button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="box-content">
-                      <div class="box-img"><span>Free</span><img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F53685786%2F239078127498%2F1%2Foriginal.jpg?h=512&amp;w=512&amp;auto=compress&amp;rect=3%2C0%2C2744%2C1372&amp;s=3e3cc7478a9ea026c7d521b2f4c9a357" alt=""/></div>
-                      <div class="text-box">
-                        <div class="text-content">
-                          <p>Sat, Nov 9</p><a href="#">
-                            <h3>Technologies That Empower E-commerce Business in Vietnam and Beyond</h3></a><span>Grand Hotel Saigon, Ho Chi Minh City, Vietnam</span>
-                        </div>
-                        <div class="icon">
-                          <button><i class="far fa-heart"></i></button>
-                          <button><i class="far fa-heart"></i></button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="box-content">
-                      <div class="box-img"><span>Free</span><img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F53685786%2F239078127498%2F1%2Foriginal.jpg?h=512&amp;w=512&amp;auto=compress&amp;rect=3%2C0%2C2744%2C1372&amp;s=3e3cc7478a9ea026c7d521b2f4c9a357" alt=""/></div>
-                      <div class="text-box">
-                        <div class="text-content">
-                          <p>Sat, Nov 9</p><a href="#">
-                            <h3>Technologies That Empower E-commerce Business in Vietnam and Beyond</h3></a><span>Grand Hotel Saigon, Ho Chi Minh City, Vietnam</span>
-                        </div>
-                        <div class="icon">
-                          <button><i class="far fa-heart"></i></button>
-                          <button><i class="far fa-heart"></i></button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="box-content">
-                      <div class="box-img"><span>Free</span><img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F53685786%2F239078127498%2F1%2Foriginal.jpg?h=512&amp;w=512&amp;auto=compress&amp;rect=3%2C0%2C2744%2C1372&amp;s=3e3cc7478a9ea026c7d521b2f4c9a357" alt=""/></div>
-                      <div class="text-box">
-                        <div class="text-content">
-                          <p>Sat, Nov 9</p><a href="#">
-                            <h3>Technologies That Empower E-commerce Business in Vietnam and Beyond</h3></a><span>Grand Hotel Saigon, Ho Chi Minh City, Vietnam</span>
-                        </div>
-                        <div class="icon">
-                          <button><i class="far fa-heart"></i></button>
-                          <button><i class="far fa-heart"></i></button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="box-content">
-                      <div class="box-img"><span>Free</span><img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F53685786%2F239078127498%2F1%2Foriginal.jpg?h=512&amp;w=512&amp;auto=compress&amp;rect=3%2C0%2C2744%2C1372&amp;s=3e3cc7478a9ea026c7d521b2f4c9a357" alt=""/></div>
-                      <div class="text-box">
-                        <div class="text-content">
-                          <p>Sat, Nov 9</p><a href="#">
-                            <h3>Technologies That Empower E-commerce Business in Vietnam and Beyond</h3></a><span>Grand Hotel Saigon, Ho Chi Minh City, Vietnam</span>
-                        </div>
-                        <div class="icon">
-                          <button><i class="far fa-heart"></i></button>
-                          <button><i class="far fa-heart"></i></button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="box-content">
-                      <div class="box-img"><span>Free</span><img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F53685786%2F239078127498%2F1%2Foriginal.jpg?h=512&amp;w=512&amp;auto=compress&amp;rect=3%2C0%2C2744%2C1372&amp;s=3e3cc7478a9ea026c7d521b2f4c9a357" alt=""/></div>
-                      <div class="text-box">
-                        <div class="text-content">
-                          <p>Sat, Nov 9</p><a href="#">
-                            <h3>Technologies That Empower E-commerce Business in Vietnam and Beyond</h3></a><span>Grand Hotel Saigon, Ho Chi Minh City, Vietnam</span>
-                        </div>
-                        <div class="icon">
-                          <button><i class="far fa-heart"></i></button>
-                          <button><i class="far fa-heart"></i></button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                      </div></a></div>
                 </div>
               </div>
             </div>
           </div>
+          <div id="viewmap"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.495183949219!2d106.692210814287!3d10.773334662197943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f3952f964f1%3A0xa8b561d3facfa118!2zNzkgVHLGsMahbmcgxJDhu4tuaCwgUGjGsOG7nW5nIELhur9uIFRow6BuaCwgUXXhuq1uIDEsIEjhu5MgQ2jDrSBNaW5oLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1573533027690!5m2!1sen!2s" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe></div>
         </div>
       </div>
     </div>

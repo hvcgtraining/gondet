@@ -985,7 +985,7 @@ hr {
     #room .nav-tabs .nav-link {
       color: #45c3aa;
       height: 35px;
-      min-width: 100px;
+      min-width: 85px;
       -webkit-box-pack: center;
       -webkit-justify-content: center;
       -moz-box-pack: center;
@@ -1007,14 +1007,15 @@ hr {
       -webkit-border-radius: 26px 26px 0 0;
       -moz-border-radius: 26px 26px 0 0;
       border-radius: 26px 26px 0 0;
-      border-bottom: 1px solid #45c3aa; }
+      border-bottom: 1px solid #45c3aa;
+      padding: .5rem !important; }
       #room .nav-tabs .nav-link::before {
         content: '';
         position: absolute;
         border-style: solid;
         border-width: 0 0 26px 30px;
         border-color: #ebe7e7 transparent;
-        right: 94%;
+        right: 92%;
         top: 7px; }
       #room .nav-tabs .nav-link::after {
         content: '';
@@ -1022,7 +1023,7 @@ hr {
         border-style: solid;
         border-width: 26px 0 0 30px;
         border-color: transparent #ebe7e7;
-        left: 94%;
+        left: 93%;
         top: 7px; }
     #room .nav-tabs .active {
       background-color: #45c3aa;
@@ -1033,7 +1034,7 @@ hr {
         border-style: solid;
         border-width: 0 0 26px 30px;
         border-color: #45c3aa transparent;
-        right: 94%;
+        right: 92%;
         top: 7px;
         z-index: 22; }
       #room .nav-tabs .active::after {
@@ -1042,7 +1043,7 @@ hr {
         border-style: solid;
         border-width: 26px 0 0 30px;
         border-color: transparent #45c3aa;
-        left: 94%;
+        left: 93%;
         top: 7px;
         z-index: 22; }
     #room .nav-tabs .nav-item {

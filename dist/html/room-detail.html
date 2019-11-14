@@ -13,21 +13,61 @@
   </head>
   <body>
     <div class="bg-body"></div>
-    <div class="bg-light py-4">
-      <div class="container bg-white px-0">
-        <div class="room-img-info">
-          <div class="row mx-0 bd-radius">
-            <div class="col-lg-8 px-0">
-              <div class="room-img-detail"><img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F72213741%2F178938166142%2F1%2Foriginal.jpg?h=512&amp;w=512&amp;auto=compress&amp;rect=0%2C133%2C1600%2C800&amp;s=87e9c8fa63da4ba4b793c30e0e41dd6e" alt=""/></div>
+    <header class="wrapper-header header-sub" id="header-room">
+      <div class="header-main">
+        <nav class="navbar navbar-expand-lg navbar-dark header_content custom-header__desktop"><a class="navbar-brand header__logo" href="./index.html"><span class="content-logo">Gondet</span></a>
+          <form class="form-inline my-2 my-lg-0 input-group form-search mr-auto">
+            <div class="input-group-prepend" id="icon-search-mobile">
+              <button class="btn my-2 my-sm-0" id="button-search-addon" type="button"><i class="fas fa-search"></i></button>
             </div>
-            <div class="col-lg-4 px-0">
-              <div class="room-info d-flex align-items-center">
-                <h3>Technologies That Empower E-commerce Business in Vietnam and Beyond</h3>
+            <div class="input-group-prepend">
+              <button class="btn my-2 my-sm-0" id="button-search-addon" type="submit"><i class="fas fa-search"></i></button>
+            </div>
+            <input class="form-control form-search-input" type="search" placeholder="Search" aria-label="Search" aria-describedby="button-search-addon"/>
+          </form>
+          <form class="form-inline my-2 my-lg-0 input-group mr-auto" id="form-search-mobile">
+            <div class="input-group-prepend">
+              <button class="btn my-2 my-sm-0" id="button-search-addon" type="submit"><i class="fas fa-search"></i></button>
+            </div>
+            <input class="form-control form-search-input" type="search" placeholder="Search" aria-label="Search" aria-describedby="button-search-addon"/>
+          </form>
+          <button class="navbar-toggler op-menu" id="isShowMenu" type="button"><span class="wrapper-op-menu"><span class="icon-op-menu"></span></span></button>
+          <div class="navbar-collapse nav-menu" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a></li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="#">Business</a><a class="dropdown-item" href="#">Music</a><a class="dropdown-item" href="#">Film &amp; Media</a><a class="dropdown-item" href="#">Fashion</a><a class="dropdown-item" href="#">Health</a><a class="dropdown-item" href="#">Sports &amp; Fitness</a><a class="dropdown-item" href="#">Food &amp; Drink</a><a class="dropdown-item" href="#">Travel &amp; Outdoor</a><a class="dropdown-item" href="#">Other</a></div>
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Help</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Create event</a></li>
+              <li class="nav-item"><a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Sign in</a></li>
+            </ul>
+            <button id="close-menu"><i class="fas fa-times"></i></button>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="bg-light">
+      <div class="wrapper-content-tab">
+        <div class="container bg-white px-0">
+          <div class="room-img-info">
+            <div class="row mx-0 bd-radius">
+              <div class="col-lg-8 px-0">
+                <div class="room-img-detail"><img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F72213741%2F178938166142%2F1%2Foriginal.jpg?h=512&amp;w=512&amp;auto=compress&amp;rect=0%2C133%2C1600%2C800&amp;s=87e9c8fa63da4ba4b793c30e0e41dd6e" alt=""/></div>
+              </div>
+              <div class="col-lg-4 px-0">
+                <div class="room-info d-flex align-items-center">
+                  <h3>Technologies That Empower E-commerce Business in Vietnam and Beyond</h3>
+                </div>
               </div>
             </div>
           </div>
           <div class="room-contacts">
-            <div class="row align-items-center flex-nowrap">
+            <div class="row align-items-center mx-0">
               <div class="col-md-5 col-sm-3">
                 <div class="icon">
                   <button><i class="fas fa-share"></i></button>
@@ -43,30 +83,106 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="text-room">
-          <div class="date-time"><span class="title-room">Date time :</span><span class="title-info">Date And Time Sat, November 16, 2019 9:00 AM – 12:00 PM</span></div>
-          <div class="location"><span class="title-room">Location :</span><span class="title-info">Grand Hotel Saigon, Ho Chi Minh City, Vietnam</span></div>
-          <div class="info">
-            <h3>Technologies That Empower E-commerce Business in Vietnam and Beyond</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore doloremque hic fugit molestiae necessitatibus illo pariatur quo reprehenderit tenetur! Excepturi alias consequatur accusamus delectus eligendi? Voluptatem, obcaecati perferendis? Aperiam, aspernatur!</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore doloremque hic fugit molestiae necessitatibus illo pariatur quo reprehenderit tenetur! Excepturi alias consequatur accusamus delectus eligendi? Voluptatem, obcaecati perferendis? Aperiam, aspernatur!</p>
-          </div>
-          <div class="rating mt-3">
-            <h6>Đánh giá :</h6><span class="fa fa-star checked"></span>
+          <div class="content-tab join-room">
+            <ul class="tabs-content overflow-auto">
+              <li class="tab-link current" data-tab="tab-1">Content</li>
+              <li class="tab-link" data-tab="tab-2">Joined</li>
+            </ul>
+            <div class="wrapper-tab-content">
+              <div class="tab-content current" id="tab-1">
+                <div class="text-room">
+                  <div class="date-time"><span class="title-room">Date time :</span><span class="title-info">Date And Time Sat, November 16, 2019 9:00 AM – 12:00 PM</span></div>
+                  <div class="location"><span class="title-room">Location :</span><span class="title-info">Grand Hotel Saigon, Ho Chi Minh City, Vietnam</span></div>
+                  <div class="info">
+                    <h3>Technologies That Empower E-commerce Business in Vietnam and Beyond</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore doloremque hic fugit molestiae necessitatibus illo pariatur quo reprehenderit tenetur! Excepturi alias consequatur accusamus delectus eligendi? Voluptatem, obcaecati perferendis? Aperiam, aspernatur!</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore doloremque hic fugit molestiae necessitatibus illo pariatur quo reprehenderit tenetur! Excepturi alias consequatur accusamus delectus eligendi? Voluptatem, obcaecati perferendis? Aperiam, aspernatur!</p>
+                  </div>
+                  <div class="rating mt-3">
+                    <h6>Đánh giá :</h6><span class="fa fa-star checked"></span>
 <span class="fa fa-star checked"></span>
 <span class="fa fa-star checked"></span>
 <span class="fa fa-star"></span>
 <span class="fa fa-star"></span>
-          </div>
-          <div class="comment">
-            <h6>Comments :</h6>
-            <textarea rows="4"></textarea>
+                  </div>
+                  <div class="comment">
+                    <h6>Comments :</h6>
+                    <textarea rows="4"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-content" id="tab-2">
+                <div class="join-list">
+                  <ul class="row">
+                    <li class="col-md-4 col-sm-6 px-2 pt-3">
+                      <div class="row-content row mx-0">
+                        <div class="title col-md-12 my-0 p-0">
+                          <label>NguyenTanDong</label>
+                        </div>
+                        <div class="img col-md-3 p-0"><img src="https://www.w3schools.com/howto/img_avatar2.png"/></div>
+                        <div class="content col-md-9">
+                          <div> <span>Nguyễn Tấn Đông</span></div>
+                        </div>
+                        <button class="btn btn-danger custom-btn"><i class="fas fa-times"></i></button>
+                      </div>
+                    </li>
+                    <li class="col-md-4 col-sm-6 px-2 pt-3">
+                      <div class="row-content row mx-0">
+                        <div class="title col-md-12 my-0 p-0">
+                          <label>NguyenTanDong</label>
+                        </div>
+                        <div class="img col-md-3 p-0"><img src="https://www.w3schools.com/howto/img_avatar2.png"/></div>
+                        <div class="content col-md-9">
+                          <div><span>Nguyễn Tấn Đông</span></div>
+                        </div>
+                        <button class="btn btn-danger custom-btn"><i class="fas fa-times"></i></button>
+                      </div>
+                    </li>
+                    <li class="col-md-4 col-sm-6 px-2 pt-3">
+                      <div class="row-content row mx-0">
+                        <div class="title col-md-12 my-0 p-0">
+                          <label>NguyenTanDong</label>
+                        </div>
+                        <div class="img col-md-3 p-0"><img src="https://www.w3schools.com/howto/img_avatar2.png"/></div>
+                        <div class="content col-md-9">
+                          <div> <span>Nguyễn Tấn Đông</span></div>
+                        </div>
+                        <button class="btn btn-danger custom-btn"><i class="fas fa-times"></i></button>
+                      </div>
+                    </li>
+                    <li class="col-md-4 col-sm-6 px-2 pt-3">
+                      <div class="row-content row mx-0">
+                        <div class="title col-md-12 my-0 p-0">
+                          <label>NguyenTanDong</label>
+                        </div>
+                        <div class="img col-md-3 p-0"><img src="https://www.w3schools.com/howto/img_avatar2.png"/></div>
+                        <div class="content col-md-9">
+                          <div> <span>Nguyễn Tấn Đông</span></div>
+                        </div>
+                        <button class="btn btn-danger custom-btn"><i class="fas fa-times"></i></button>
+                      </div>
+                    </li>
+                    <li class="col-md-4 col-sm-6 px-2 pt-3">
+                      <div class="row-content row mx-0">
+                        <div class="title col-md-12 my-0 p-0">
+                          <label>NguyenTanDong</label>
+                        </div>
+                        <div class="img col-md-3 p-0"><img src="https://www.w3schools.com/howto/img_avatar2.png"/></div>
+                        <div class="content col-md-9">
+                          <div> <span>Nguyễn Tấn Đông</span></div>
+                        </div>
+                        <button class="btn btn-danger custom-btn"><i class="fas fa-times"></i></button>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <button class="btn-backtotop"><i class="fas fa-arrow-up"></i></button><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
